@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Untitled design (1).png'); /* Path to your background image */
+    background-size: cover; /* Cover the entire body with the background image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 20px;
+  }
+ 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  nav ul li {
+    display: inline; 
+    margin-right: 20px; 
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #f5f3f3; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: larger;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bolder;
+    border-bottom: 3px solid transparent;
+  }
+  
+  /* Hover effect for navigation items */
+  nav ul li a:hover {
+    color: #007bff; /* Change to your desired hover color, for example, blue (#007bff) */
+    background-color: transparent; 
+    border-bottom: 3px solid red;/* Remove background color on hover */
+  }
+
+  .nav a.active {
+    border-bottom: 3px solid red;
+  }
+  .pricelist-header {
+    text-align: center;     /* Center the text */
+    margin-top: 30px;       /* Add some space between the two headers */
+    font-size: 50px;        /* Adjust the font size as per your preference */
+    color: #b6b5b5;  
+    margin-bottom: 2px;          /* Set the color of the text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: 5s anim-popoutin ease infinite;
+  }
+  @keyframes anim-popoutin {
+    0% {
+      color: black;
+      transform: scale(0);
+      opacity: 0;
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+      color: red;
+      transform: scale(2);
+      opacity: 1;
+      text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      color: black;
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      /* animate nothing to add pause at the end of animation */
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  .car-type {
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    margin: 100px;
+    margin-right: 20px;
+    padding: 30px;
+    background-color: #ddd;
+    border: 5px solid #288d59; /* Corrected the border property */
+    transition: border-color 0.3s ease; /* Transition for border color change */
+    transition: background-color 0.3s ease;
+}
+
+.car-type:hover {
+    border-color: #007bff; /* Change border color on hover */
+    background-color: rgba(193, 198, 204, 0.8);
+}
+  
+  .car-type h2 {
+    margin-top: 5;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .car-type p {
+    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+  .price {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  

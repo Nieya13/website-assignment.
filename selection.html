@@ -1,0 +1,211 @@
+<style>
+body {
+ position: relative;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ background-color: #302f2f;
+ background-image: url(photo2.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+}
+/*this is the link for the website */
+a{
+ text-decoration: none;
+}
+img{
+  height: 100px;
+  width: 200px;
+}
+
+/*navigation bar top center of the screen*/
+.navigation_bar {
+ position: relative;
+ width: 80%;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+h1 {
+ position: relative;
+ color: white;
+ text-align: center;
+ margin-bottom: 20px;
+ margin-right: 10;
+}
+h2{
+ color: white;
+ text-align: center;
+ margin-bottom: 20px;
+ margin-right: 10;
+}
+/*3 button center below page*/
+.container {
+ width: 80%;
+ margin: 0 auto; 
+ align:center;
+ color: white;
+ font-size: 18px;
+}
+.contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  nav ul li {
+    display: inline; /* Display inline to place items side by side */
+    margin-right: 20px; /* Spacing between navigation items */
+  }
+  
+  /* Change the color of navigation items */
+  nav ul li a {
+    text-decoration: none;
+    color: #f5f3f3; /* Change to your desired color, for example, dark grey (#333) */
+    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+    font-size: larger;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  /* Hover effect for navigation items */
+  nav ul li a:hover {
+    color: #007bff; /* Change to your desired hover color, for example, blue (#007bff) */
+    background-color: transparent; 
+    border-bottom: 3px solid red;/* Remove background color on hover */
+  }
+  .nav a.active {
+    border-bottom: 3px solid red;
+  }
+
+  /*Design button*/
+.btn {
+ 
+ display: inline-block;
+ padding: 10px 20px;
+ margin: 10px;
+ color: white;
+ cursor: pointer;
+ border-radius: 25px;
+ transition: 0.3s;
+}
+
+.btn:hover {
+ background-color: #e5e5e5;   
+}
+
+.btn1 {
+ display: inline-block;
+ padding: 10px 20px;
+ margin: 10px;
+ color: white;
+ cursor: pointer;
+ border-radius: 25px;
+ transition: 0.3s; 
+ font-size: 18px;
+}
+
+.btn1:hover{
+ background-color: #b8b8b8;   
+}
+
+.box {
+ background-color:#0B1320;
+ margin: 15px;
+ margin-bottom: 5px;
+ padding: 15px;
+ width: 230px;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ display: inline-block; /* Make the boxes display inline */
+ text-align: center; /* Align text inside the box to the center */
+ color: white;
+ font-size: 8px;
+ display: no;
+}
+
+.box2{
+ background-color:#0F8488;
+ width: 100%;
+ padding:  5px 4;
+ margin-top: 10px;
+ border-top: 10px;
+ border-bottom: 10px;
+}
+
+
+</style>
+
+<body>
+  <div class="Background_Image">
+    </div>
+  <!--navigation bar of the website-->
+  <header 
+	<div class="contain">
+	  <img src="photo_2024-01-08_22-06-47.jpg" alt="Ride 4 U" class="logo">
+	  <nav>
+		<ul>
+		  <li><a href="about us.html">About Us</a></li>
+		  <li><a href="pricing.html">Pricing</a></li>
+		  <li><a href="testimonials.html">Testimonials</a></li>
+		  <li><a href="maps.html">Locations</a></li>
+		  <li><a href="Contact Us.html">Contact</a></li>
+		  <li><a href="Sign up.html">Sign Up</a></li>
+		  <li><a href="index.html">Menu</a></li>
+		</ul>
+	  </nav>
+	</div>
+	</header>
+  
+  <!--3 button at the center of the screen-->
+  <div class="container">
+    <h1>Select Your Vehicle</h1>
+    <h2>Seamless Journeys, Limitless Choices: Your Ideal Car, Your Ultimate Escape.</h2>
+    <div class="box" id="sudan">
+        <div class="box2"></div>
+        <img src="image2.png">
+        <li><a href="sedan.html" class="btn1">
+          Sudan <br>
+        </a></li>
+        <p>"Cruise in Comfort: Unleash the Power of the Perfect Sedan."</p>   
+    </div>
+
+    <div class="box" id="compact">
+      <div class="box2"></div>
+      <img src="image3.png">
+      <a href="comfrot.html" class="btn1">
+        Compact <br>
+      </a></li>
+      <p>"Small Size, Big Thrills: Compact Cars, Maximum Fun."</p>
+    </div>
+
+    <div class="box" id="mpv">
+      <div class="box2"></div>
+      <img src="image4.png">
+      <a href="mpv.html" class="btn1">
+        MPV <br>
+      </a></li>
+      <p>"More Than a Car: Your MPV, Your Travel Companion."</p>
+      
+    </div>
+</div>
+<script>
+  function openBox(boxId) {
+      var box = document.getElementById(boxId);
+      if (box.style.display === "none") {
+          box.style.display = "block";
+      } else {
+          box.style.display = "none";
+      }
+  }
+</script>
+
+
+</body>

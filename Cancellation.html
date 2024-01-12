@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="style2.css" rel="stylesheet">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+</script>
+<title>Ride4U - Cancellation</title>
+</head>
+
+<body>
+      <header 
+  <div class="contain">
+    <img src="photo_2024-01-08_22-06-47.jpg" alt="Ride 4 U" class="logo">
+    <nav>
+      <ul>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="maps.html">Locations</a></li>
+        <li><a href="Contact Us.html">Contact</a></li>
+        <li><a href="Sign up.html">Sign Up</a></li>
+        <li><a href="index.html">Menu</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+<section class="ct_icon_box_section">
+
+<div class="container">
+      <div class="ct-section_header ct-section_header--type2">
+                <h2>Manage Your Booking: <br>Cancellation and Refund Center</h2>
+                <div class="ct-section_header-separator">&nbsp;
+                </div>
+      </div>
+</div>
+
+
+<div class="container3">
+   <div class="col-md-7>
+
+
+      <fieldset class="custom-fieldset">
+            <button type="button" class="custom-button" id="cancelBookingButton" onclick="redirectToCancellation()">Cancellation Booking</button>
+        </fieldset>
+      
+<br>
+<br>
+<br>
+<br>  
+<br>
+<fieldset class="custom-fieldset2">
+      <button type="button" class="custom-button2" id="manageBookingButton">Manage Booking</button>
+  </fieldset>
+  
+<br>
+<br>
+<br>
+<br>
+
+      
+<fieldset class="custom-fieldset3">
+      <button type="button" class="custom-button3" id="refundButton" onclick="redirectToHomepage()">Request Refund</button>
+  </fieldset>
+  <div id="messageContainer" style="margin-top: 20px;"></div>
+
+  <script>
+       function redirectToCancellation() {
+          // Redirect to homepage
+      
+          
+          // Display a thank you message
+          alert('Your cancellation has been processed.');
+          window.location.href = 'homepage.html';
+      }
+        var manageBookingButton = document.getElementById('manageBookingButton');
+
+// Add event listener to the button
+manageBookingButton.addEventListener('click', function() {
+    // Redirect to the specified HTML page when the button is clicked
+    window.location.href = 'Pick up& return.html';
+});
+      function redirectToHomepage() {
+          // Redirect to homepage
+      
+          
+          // Display a thank you message
+          alert('Thank you for your request. Refund will be processed shortly in your account.');
+          window.location.href = 'index.html';
+      }
+  </script>
+
+
+</div>
+</div>
+
+</section>
+</body>
+
+<img src="img/axia.png" class="right-image">

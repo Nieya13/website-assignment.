@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking</title>
+    <link rel="stylesheet" href="online banking.css">
+</head>
+
+<body>
+    <div id="loadingPage">
+        <p>Loading...</p>
+    </div>
+
+    <header>
+        <h1>Welcome to Online Banking</h1>
+    </header>
+
+    <nav>
+        <!-- Navigation links can be added here if needed -->
+    </nav>
+
+    <main>
+        <section class="box" id="OnlineTransfer">
+            <img src="photo_2024-01-08_22-06-47.jpg" alt="Online Transfer Icon">
+            <a href="index.html" class="button" onclick="redirectToHomepage()">Online Banking</a>
+        </section>
+
+        <!-- Additional sections for other banking functionalities can be added here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Banking. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const onlineBankingButton = document.getElementById('onlineBankingButton');
+        const loadingPage = document.getElementById('loadingPage');
+
+        onlineBankingButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            // Display the loading page
+            loadingPage.style.display = 'block';
+
+            // Hide the loading page and display the alert after 3 seconds
+            setTimeout(function() {
+                loadingPage.style.display = 'none';
+            }, 6000); // 3 seconds
+        });
+    });
+        function redirectToHomepage() {
+          // Redirect to homepage
+      
+          
+          // Display a thank you message
+          alert('Thank you for your request. It will be processed shortly.');
+          window.location.href = 'index.html';
+      }
+          
+</script>
+</html>

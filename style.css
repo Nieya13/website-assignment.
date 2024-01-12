@@ -1,0 +1,56 @@
+/* RIDE4U - SIGN UP */
+/* RIDE4U - SIGN UP */
+/* RIDE4U - SIGN UP */
+/* RIDE4U - SIGN UP */
+/* RIDE4U - SIGN UP */
+
+
+
+/* Background image */
+.banner 
+{
+		padding: 200px; 
+		background-image: url(img/ride4u-bg.png);
+		background-size: cover; 
+		background-repeat: no-repeat; 
+		background-attachment: fixed; 
+}
+
+/* Container */
+.banner .submit-form 
+{
+    text-align: left;
+    background-color: #837e7e;
+    padding: 40px;
+    opacity: 0.8;
+}
+
+/* Form */
+.submit-form h4 
+{
+	width: 100%;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	display: inline-block;
+	border-bottom: 1px solid #2f2f64;
+    align-items: center;
+}
+
+/* Submit Form Button*/
+.submit-form button 
+{
+	margin-top: 15px;
+	width: 100%;
+	height: 36px;
+	background-color: #232324;
+	font-size: 13px;
+	color: #e7e2e2;
+	font-weight: 600;
+}
+
+
+
+

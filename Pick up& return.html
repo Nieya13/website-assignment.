@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Booking - RIDE 4 U</title>
+<link rel="stylesheet" href="pick up & return.css">
+<style>
+  /* Add your CSS styling here if needed */
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="photo_2024-01-08_22-06-47.jpg" alt="Ride 4 U" class="logo">
+      <nav>
+        <ul>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="maps.html">Locations</a></li>
+          <li><a href="Contact Us.html">Contact</a></li>
+          <li><a href="Sign up.html">Sign Up</a></li>
+          <li><a href="index.html">Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="booking">
+    <h1>RIDE 4 U - Car Booking</h1>
+  
+    <form class="booking-form" onsubmit="return validateForm();">
+      <!-- Your form fields here (unchanged) -->
+      <!-- ... -->
+      <form class="booking-form">
+        <div class="form-group">
+          <label for="carCategory">Car Category</label>
+          <select id="carCategory" name="carCategory">
+            <option value="sedan">Sedan</option>
+            <option value="compact">Compact</option>
+            <option value="mpv">MPV</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <label for="pickupLocation">Pickup Location</label>
+          <input type="text" id="pickupLocation" name="pickupLocation" placeholder="Enter Pickup Location">
+        </div>
+    
+        <div class="form-group">
+          <label for="returnLocation">Return Location</label>
+          <input type="text" id="returnLocation" name="returnLocation" placeholder="Enter Return Location">
+        </div>
+    
+        <div class="form-group">
+          <label for="pickupDate">Pickup Date</label>
+          <input type="date" id="pickupDate" name="pickupDate">
+        </div>
+    
+        <div class="form-group">
+          <label for="pickupTime">Pickup Time</label>
+          <input type="time" id="pickupTime" name="pickupTime">
+        </div>
+    
+        <div class="form-group">
+          <label for="returnDate">Return Date</label>
+          <input type="date" id="returnDate" name="returnDate">
+        </div>
+    
+        <div class="form-group">
+          <label for="returnTime">Return Time</label>
+          <input type="time" id="returnTime" name="returnTime">
+        </div>
+      <div class="form-group">
+        <button type="submit">Search</button> <!-- This button will trigger the form submission -->
+      </div>
+
+      <!-- Container for the message and button -->
+      <div id="bookingMessage" class="booking-message" style="display: none;">
+        <p>Thank you for booking!</p>
+        <button onclick="goToPayment()">Go to Payment</button>
+      </div>
+      <div id="errorMessage" style="color: red; display: none;">Please fill in all the required fields.</div>
+    </form>
+  </div>
+<!-- Your HTML form and other elements -->
+
+<script>
+  function validateForm() {
+    // Fetching values from form fields
+    const carCategory = document.getElementById('carCategory').value;
+    const pickupLocation = document.getElementById('pickupLocation').value;
+    const returnLocation = document.getElementById('returnLocation').value;
+    const pickupDate = document.getElementById('pickupDate').value;
+    const pickupTime = document.getElementById('pickupTime').value;
+    const returnDate = document.getElementById('returnDate').value;
+    const returnTime = document.getElementById('returnTime').value;
+
+    // Checking if any field is empty
+    if (!carCategory || !pickupLocation || !returnLocation || !pickupDate || !pickupTime || !returnDate || !returnTime) {
+      document.getElementById('errorMessage').style.display = 'block'; // Show error message
+      return false; // Prevent form submission
+    } else {
+      document.getElementById('errorMessage').style.display = 'none'; // Hide error message if displayed
+      showMessage(); // Display the booking message
+      return false; // Prevent form submission
+    }
+  }
+
+  function showMessage() {
+    document.getElementById('bookingMessage').style.display = 'block'; // Show the booking message
+  }
+
+  function goToPayment() {
+    window.location.href = "payment.html"; // Redirect to payment page
+  }
+</script>
+
+
+</body>
+</html>
